@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.10)
+project (task_2)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+
+set(RESULTS_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${RESULTS_OUTPUT_DIRECTORY})
+
+add_executable(task_2 task_2.cpp)

@@ -1,0 +1,51 @@
+
+// #include "html_writer.hpp"
+// #include "image_browser.hpp"
+// namespace fs = std::filesystem;
+// int main() {
+//   const std::string title = "Image Browser";
+//   const std::string stylesheet = "stylesheet";
+//   image_browser::ImageRow row;
+//   std::vector<image_browser::ImageRow> rows_vector;
+//   int iterator = 0;
+
+//   fs::current_path("web_app");
+
+//   for (const auto &i : fs::directory_iterator("data")) {
+//     std::string file = i.path().filename();
+//     std::cout << i.path().filename();
+//     image_browser::ScoredImage image_tuple = {file, 0.0};
+//     row[iterator] = image_tuple;
+//     iterator++;p"
+// #include "image_browser.hpp"ck(row);
+//       iterator = 0;
+//     }
+//   }
+
+//   image_browser::CreateImageBrowser(title, stylesheet, rows_vector);
+//   return 0;
+// }
+
+// int main() {
+//   const std::string title = "Image Browser";
+//   fs::current_path("web_app");
+//   const std::string stylesheet = "style.css";
+//   std::string path = "data";
+//   std::vector<image_browser::ImageRow> rows;
+//   image_browser::ImageRow row;
+//   int counter = 1;
+//   for (const auto &i : fs::directory_iterator("data")) {
+//     std::string file = i.path().filename();
+//     std::cout << i.path().filename();
+//     image_browser::ScoredImage image_tuple = {file, 0.0};
+//     row[iterator] = image_tuple;
+//     iterator++;
+
+//     if (iterator == 2) {
+//       rows_vector.push_back(row);
+//       iterator = 0;
+//     }
+//   }
+//   image_browser::CreateImageBrowser(title, stylesheet, rows);
+//   return 0;
+// }
